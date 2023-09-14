@@ -1,0 +1,27 @@
+#Monitorinf files are used to watch Variables
+#A Launch.json file in the .vscode folder is needed to start the monitoring
+#NOTE: Only Global variables can be monitored and also only Variables of a certain type
+SortinglineStartingLightbarrier
+SortinglineEndLightbarrier
+SortinglineMotorForConveyor
+SortinglineCompressor
+SortinglineValveEjector
+
+CompressorOutputWriter
+CylinderOutputWriter
+MotorForwardOutputWriter
+MotorBackwardsOutputWriter
+
+StartingLightbarriereReader
+EndingLightbarrierReader
+AxisReferenceswitch
+
+CompressorClassInstance
+CylinderClassInstance
+
+TimeproviderForAxis
+MotorForAxis
+TimebasedEncoderForAxis
+ConveyorbeltForSortingline
+
+Statecounter

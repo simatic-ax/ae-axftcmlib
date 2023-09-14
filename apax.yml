@@ -1,11 +1,33 @@
-name: "example-for-axftcm"
+name: "example-for-axftcmlib"
 version: 0.0.0
 type: app
 targets:
   - "1500"
-  - axunit-llvm
+  #- axunit-llvm
 variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
+  IP: 192.168.0.1 #<--Change Target IP here and in your launch.json & settings.json
+  CERTIFICATE: certificate.pem
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
+
 devDependencies:
   "@ax/sdk": 4.0.8
+dependencies:
+  "@ax/certificate-management": ^1.1.0 #For extracting certificates
+  "@ax/mon": ^0.19.4 #For looking at variables during runtime (Monitoring.mon)
+  "@simatic-ax/axftcmlib": ^0.0.3 
+  
+scripts:
+#For some PLCs a certificate is needed to communicate
+#The certificate can be extracted using this command
+  cert: apax plc-cert -t $IP -o $CERTIFICATE
+
+#This loads your code directly into the PLC
+  load: apax sld load --target $IP --input bin/1500 --restart --accept-security-disclaimer -C $CERTIFICATE
+
+#This command builds your Programm and automatically loads it into the PLC
+  testing: 
+      - apax build 
+      - apax sld load --target $IP --input bin/1500 --restart --accept-security-disclaimer -C $CERTIFICATE
