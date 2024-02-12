@@ -16,7 +16,7 @@ devDependencies:
   "@ax/sdk": 4.0.8
 dependencies:
   "@ax/certificate-management": ^1.1.0 #For extracting certificates
-  "@ax/mon": ^0.19.4 #For looking at variables during runtime (Monitoring.mon)
+  "@ax/mon": ^1.0.0 #For looking at variables during runtime (Monitoring.mon)
   "@simatic-ax/axftcmlib": ^0.0.3 
   
 scripts:
