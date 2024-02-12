@@ -16,6 +16,8 @@ devDependencies:
   "@ax/sdk": 2311.0.1
 dependencies:
   "@simatic-ax/axftcmlib": 1.0.0
+  "@ax/system-timer": 6.0.94
+  "@ax/simatic-1500-clocks": ^6.0.37
 
 scripts:
   #For some PLCs a certificate is needed to communicate
