@@ -36,7 +36,7 @@ CONFIGURATION axftcmlibconfig
 
         //Actual instances of the Elements used in the sortingline
         CompressorClassInstance         :   PneumaticCompressor :=  (ActiveCompressor := CompressorOutputWriter);
-        CylinderClassInstance           :   PneumaticCylinder   :=  (CoilPushing      := CylinderOutputWriter);
+        CylinderClassInstance           :   ActuatorTimeBased   :=  (ControlPush      := CylinderOutputWriter);
         
         //Axis:
         //An Encoder as well as a Timeprovider are needed to gereate the current position of the conveyorbelt

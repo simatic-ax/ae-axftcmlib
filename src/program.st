@@ -26,7 +26,7 @@ PROGRAM ExampleForAxftcm_Program
         AxisReferenceswitch                 : BinSignal;
 
         CompressorClassInstance             : PneumaticCompressor;
-        CylinderClassInstance               : PneumaticCylinder;  
+        CylinderClassInstance               : ActuatorTimeBased;  
 
         TimeproviderForAxis                 : Timeprovider;
         MotorForAxis                        : MotorFT;
@@ -64,7 +64,7 @@ PROGRAM ExampleForAxftcm_Program
     END_IF;
 
     IF Statecounter = 2 AND EndingLightbarrierReader.QFal() THEN
-        CylinderClassInstance.Start();
+        CylinderClassInstance.Enable();
         Statecounter := 0;
     END_IF;
     
