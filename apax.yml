@@ -13,7 +13,7 @@ registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 
 devDependencies:
-  "@ax/sdk": 4.0.8
+  "@ax/sdk": 4.0.12
 dependencies:
   "@ax/certificate-management": ^1.1.0 #For extracting certificates
   "@ax/mon": ^0.19.4 #For looking at variables during runtime (Monitoring.mon)
