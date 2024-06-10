@@ -13,7 +13,7 @@ registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": 2311.1.2
 dependencies:
   "@simatic-ax/axftcmlib": 1.0.0
   "@ax/system-timer": 6.0.94
