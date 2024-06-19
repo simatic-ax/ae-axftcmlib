@@ -15,9 +15,9 @@ registries:
 devDependencies:
   "@ax/sdk": 2405.0.0
 dependencies:
-  "@simatic-ax/axftcmlib": 1.0.0
-  "@ax/system-timer": 6.0.94
-  "@ax/simatic-1500-clocks": ^6.0.37
+  "@simatic-ax/axftcmlib": 2.0.0
+  "@ax/system-timer": 7.0.17
+  "@ax/simatic-1500-clocks": 7.0.4
 
 scripts:
   #For some PLCs a certificate is needed to communicate
@@ -34,4 +34,4 @@ scripts:
     - apax sld load --target $IP --input bin/1500 --restart
       --accept-security-disclaimer -C $CERTIFICATE
 installStrategy: strict
-apaxVersion: 3.1.0
+apaxVersion: 3.2.1
