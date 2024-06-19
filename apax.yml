@@ -1,9 +1,26 @@
+# General information
 name: "ae-axftcmlib"
-version: 0.0.0
+version: 2.0.0
 type: app
+# Description will be displayed in the apax extension
+description: Application Example for Fischertechnik library
+# Build targets
 targets:
   - "1500"
   - "llvm"
+
+# Install Setting
+installStrategy: strict
+apaxVersion: 3.2.1
+# Dependencies
+devDependencies:
+  "@ax/sdk": 2405.0.0
+dependencies:
+  "@simatic-ax/axftcmlib": 2.0.0
+  "@ax/system-timer": 7.0.17
+  "@ax/simatic-1500-clocks": 7.0.4
+
+# Project variables
 variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
@@ -12,13 +29,7 @@ variables:
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 
-devDependencies:
-  "@ax/sdk": 2405.0.0
-dependencies:
-  "@simatic-ax/axftcmlib": 2.0.0
-  "@ax/system-timer": 7.0.17
-  "@ax/simatic-1500-clocks": 7.0.4
-
+# Apax scripts
 scripts:
   #For some PLCs a certificate is needed to communicate
   #The certificate can be extracted using this command
@@ -33,5 +44,3 @@ scripts:
     - apax build
     - apax sld load --target $IP --input bin/1500 --restart
       --accept-security-disclaimer -C $CERTIFICATE
-installStrategy: strict
-apaxVersion: 3.2.1
