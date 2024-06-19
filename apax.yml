@@ -37,11 +37,9 @@ scripts:
   cert: apax plc-cert -t $IP -o $CERTIFICATE
 
   #This loads your code directly into the PLC
-  load: apax sld load --target $IP --input bin/1500 --restart
-    --accept-security-disclaimer -C $CERTIFICATE
+  load: apax sld load --target $IP --input bin/1500 --restart --accept-security-disclaimer -C $CERTIFICATE
 
   #This command builds your Programm and automatically loads it into the PLC
   testing:
     - apax build
-    - apax sld load --target $IP --input bin/1500 --restart
-      --accept-security-disclaimer -C $CERTIFICATE
+    - apax sld load --target $IP --input bin/1500 --restart --accept-security-disclaimer -C $CERTIFICATE
