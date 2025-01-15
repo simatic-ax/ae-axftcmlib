@@ -21,7 +21,7 @@ devDependencies:
 dependencies:
   "@simatic-ax/axftcmlib": 2.0.0
   "@ax/system-timer": 7.0.17
-  "@ax/simatic-1500-clocks": 7.0.4
+  "@ax/simatic-1500-clocks": 8.0.8
 
 # Project variables
 variables:
