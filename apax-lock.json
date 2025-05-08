@@ -7,12 +7,12 @@
     "name": "ae-axftcmlib",
     "version": "2.0.0",
     "dependencies": {
-      "@simatic-ax/axftcmlib": "4.0.0",
-      "@ax/system-timer": "10.0.24",
-      "@ax/simatic-1500-clocks": "10.0.6"
+      "@simatic-ax/axftcmlib": "^4.0.0",
+      "@ax/system-timer": "^10.0.24",
+      "@ax/simatic-1500-clocks": "^10.0.6"
     },
     "devDependencies": {
-      "@ax/sdk": "2504.0.0"
+      "@ax/sdk": "^2504.0.0"
     }
   },
   "packages": {
@@ -651,13 +651,6 @@
       ],
       "dependencies": {}
     },
-    "@ax/system-math": {
-      "name": "@ax/system-math",
-      "version": "10.0.24",
-      "integrity": "sha512-bdyToqd9eFG89/Xp/LjaCBC/6yNmy3Z2ynXb/KLsO0avJtgszWtVDW/0yLpB9RgGmzh9vh9feAS7AKgVv1cSPQ==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-math/-/system-math-10.0.24.tgz",
-      "dependencies": {}
-    },
     "@ax/st-docs": {
       "name": "@ax/st-docs",
       "version": "10.0.85",
@@ -726,6 +719,13 @@
       "cpu": [
         "x64"
       ],
+      "dependencies": {}
+    },
+    "@ax/system-math": {
+      "name": "@ax/system-math",
+      "version": "10.0.24",
+      "integrity": "sha512-bdyToqd9eFG89/Xp/LjaCBC/6yNmy3Z2ynXb/KLsO0avJtgszWtVDW/0yLpB9RgGmzh9vh9feAS7AKgVv1cSPQ==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-math/-/system-math-10.0.24.tgz",
       "dependencies": {}
     },
     "@ax/system-datetime": {
