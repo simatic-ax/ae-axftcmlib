@@ -12,16 +12,13 @@ targets:
 # Registries from where the packages will be loaded
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
-# Install Setting
-installStrategy: strict
-apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
+  "@ax/sdk": ^2504.0.0
 dependencies:
-  "@simatic-ax/axftcmlib": 2.0.0
-  "@ax/system-timer": 7.0.17
-  "@ax/simatic-1500-clocks": 7.0.4
+  "@simatic-ax/axftcmlib": ^4.0.0
+  "@ax/system-timer": ^10.0.24
+  "@ax/simatic-1500-clocks": ^10.0.6
 
 # Project variables
 variables:
