@@ -1,18 +1,18 @@
 {
   "name": "ae-axftcmlib",
-  "version": "2.0.0",
+  "version": "0.0.0-placeholder",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
     "name": "ae-axftcmlib",
-    "version": "2.0.0",
+    "version": "0.0.0-placeholder",
     "dependencies": {
-      "@simatic-ax/axftcmlib": "^4.0.0",
-      "@ax/system-timer": "^10.0.24",
-      "@ax/simatic-1500-clocks": "^10.0.6"
+      "@simatic-ax/axftcmlib": "4.0.0",
+      "@ax/system-timer": "10.0.24",
+      "@ax/simatic-1500-clocks": "10.0.6"
     },
     "devDependencies": {
-      "@ax/sdk": "^2504.0.0"
+      "@ax/sdk": "2504.0.0"
     }
   },
   "packages": {
